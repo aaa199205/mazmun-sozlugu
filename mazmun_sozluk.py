@@ -46,8 +46,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Klasik Türk Şiiri Mazmun Sözlüğü")
-st.subheader("Divan Edebiyatı Mazmunları Araştırma Aracı")
 
 st.info("""
 **Mazmun** (Ar. mażmūn)  
