@@ -14,6 +14,25 @@ st.markdown("""
         left: 0;
         width: 100%;
         height: 100%;
+        background-color: rgba(248, 241, 227, 0.65);  /* Daha az beyaz */
+    }
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
+    .stApp {
+        background-image: url("https://i.imgur.com/JAri0SO.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .stApp::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: rgba(248, 241, 227, 0.82);
     }
 </style>
