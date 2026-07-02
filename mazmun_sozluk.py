@@ -1,4 +1,5 @@
 import streamlit as st
+st.markdown('<h1 style="color: white; text-align: center;">KLASİK TÜRK ŞİİRİ MAZMUN SÖZLÜĞÜ</h1>', unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="Mazmun Sözlüğü", layout="centered")
