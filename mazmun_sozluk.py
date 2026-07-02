@@ -22,7 +22,7 @@ mazmunlar = {
     "Bâlâ": "Kök: Far. Zahiri Anlamı: Yüksek, yukarı. Şiirdeki Karşılığı: \"Kadd-i bâlâ\" tamlamasıyla sevgilinin ulaşılamayan, yüce ve uzun boyu. Örnek Beyit: \"O kadd-i bâlâya ermez elimiz neyleriz Gönül o serv-i âzâda muallaktır neyleriz\" — Nâilî",
       "Hadd": "Kök: Ar. Zahiri Anlamı: Yanak. Şiirdeki Karşılığı: Gül gibi taze, ateş gibi parlak ve kırmızı olan sevgili yanağı. Örnek Beyit: \"Lâle-hadler yine gülşende neler etmediler Servi yürütmediler goncayı söyletmediler\" — Necâtî Bey"
 }
-}
+
 st.markdown("""
 <style>
     .stApp {
