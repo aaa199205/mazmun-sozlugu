@@ -1,34 +1,72 @@
 import streamlit as st
 
-st.title("🕌 Klasik Şiir Mazmun Sözlüğü")
-st.write("Divan edebiyatı mazmunları - Araştırma için")
+st.set_page_config(page_title="Mazmun Sözlüğü", page_icon="🕌", layout="centered")
+
+# Stil
+st.markdown("""
+<style>
+    .stApp {background-color: #f8f1e3;}
+    h1 {color: #8B4513; text-align: center;}
+    .stTextInput > div > div > input {
+        background-color: #fffaf0;
+        border: 2px solid #8B4513;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+st.title("🕌 Klasik Türk Şiiri Mazmun Sözlüğü")
+st.markdown("### Divan Edebiyatı Mazmunları")
 
 mazmunlar = {
-    "Nergis": "Sevgilinin gözüdür. Renginden ve duruşundan dolayı uykulu, baygın veya hasta bakışı temsil eder.",
-    "Kement / Mar / Yılan": "Sevgilinin saçıdır. Aşığın boynuna dolanır, onu esir eder ve siyahtır.",
-    "Gonca": "Sevgilinin ağzıdır. Sırrını vermez, sıkı sıkıya kapalıdır; güldüğü zaman açılır.",
-    "Lal": "Sevgilinin dudağıdır. Hem rengi kırmızıdır hem de aşığa hayat veren şarap (söz) oradan çıkar.",
-    "Yay / Ebru": "Sevgilinin kaşıdır. Aşığın kalbine fırlatılacak oklar bu yaydan çıkar.",
-    "Ok / Tir / Müje": "Sevgilinin kirpikleridir. Aşığın kalbine saplanan birer oktur.",
-    "Servi / Ar'ar": "Sevgilinin boyudur. Uzun, düzgün, endamlı ve kusursuzdur.",
-    "Ay / Mah": "Sevgilinin yüzüdür. Parlaktır, etrafına ışık saçar, kusursuz bir güzelliği vardır.",
-    "Bade / Şarap": "İlahi aşk veya sevgilinin aşkıyla sarhoş olma durumudur.",
-    "Zenehdan / Çah": "Sevgilinin çenesindeki çukurdur (gamze). Aşığın içine düşüp hapsolduğu bir kuyudur."
+    "Nergis": "Sevgilinin gözü. Uykulu, baygın bakış.",
+    "Kement / Yılan": "Sevgilinin saçı. Aşığı esir eden siyah teller.",
+    "Gonca": "Sevgilinin ağzı. Sıkı kapalı, sır vermez.",
+    "Lal": "Sevgilinin dudağı. Kırmızı, şarap gibi.",
+    "Yay / Ebru": "Sevgilinin kaşı. Ok atan yay.",
+    "Ok / Müje": "Sevgilinin kirpiği. Kalbe saplanan ok.",
+    "Servi": "Sevgilinin boyu. Uzun, düzgün, endamlı.",
+    "Ay / Mah": "Sevgilinin yüzü. Parlak ve kusursuz.",
+    "Bade / Şarap": "Aşk şarabı, ilahi sarhoşluk.",
+    "Zenehdan / Çah": "Sevgilinin gamzesi (çene çukuru). Aşığın düştüğü kuyu.",
+    "Hat": "Sevgilinin yüzündeki tüyler (yeşil reyhan gibi).",
+    "Ben / Hal": "Sevgilinin yüzündeki siyah ben.",
+    "Dürr / İnci": "Sevgilinin dişleri.",
+    "Gerdan": "Sevgilinin beyaz boynu.",
+    "Sine": "Sevgilinin göğsü (ayna gibi).",
+    "Gül": "Sevgilinin yanağı.",
+    "Saki": "Aşk şarabı sunan, meclis düzenleyen.",
+    "Mecnun": "Aşkından aklını yitirmiş aşık tipi.",
+    "Geda": "Aşık (fakir, dilenci).",
+    "Harabat": "Meyhane, ilahi aşkın mekanı.",
+    "Pir-i Mugan": "Meyhanenin bilge mürşidi.",
+    "Zahid": "Aşktan anlamayan kuru sofu.",
+    "Şeb-i Yelda": "En uzun gece, bitmeyen hasret gecesi.",
+    "Ağyar / Rakip": "Aşığa engel olan rakip.",
+    "Çeşm-i Giryan": "Gözyaşı döken göz.",
+    "Hüma": "Uğurlu talih kuşu.",
+    "Anka": "Efsanevi nadir kuş.",
+    "Saba": "Sevgiliden haber getiren rüzgar.",
+    "Nilüfer": "Boynu bükük, mahcup çiçek."
 }
 
-arama = st.text_input("🔍 Mazmun ara:", "")
+arama = st.text_input("🔍 Mazmun ara:", key="unique_search")
 
 if arama:
-    bulunan = {k: v for k, v in mazmunlar.items() if arama.lower() in k.lower() or arama.lower() in v.lower()}
+    arama_lower = arama.lower()
+    bulunan = {k: v for k, v in mazmunlar.items() 
+               if arama_lower in k.lower() or arama_lower in v.lower()}
+    
     if bulunan:
-        st.success(f"✅ {len(bulunan)} sonuç bulundu!")
+        st.success(f"✅ {len(bulunan)} mazmun bulundu")
         for m, aciklama in bulunan.items():
             st.subheader(m)
             st.write(aciklama)
+            st.divider()
     else:
-        st.error("❌ Bu mazmun bulunamadı.")
+        st.error("❌ Bu mazmun sözlükte yok.")
 else:
-    st.write("### Tüm Mazmunlar")
-    for m, aciklama in mazmunlar.items():
-        st.subheader(m)
-        st.write(aciklama)
+    st.info("🔎 Bir mazmun adı veya kelime yazarak arama yapın.")
+
+st.caption("Klasik Türk Edebiyatı Mazmun Sözlüğü")
