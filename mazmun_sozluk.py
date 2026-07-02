@@ -1,4 +1,26 @@
 import streamlit as st
+st.markdown("""
+<style>
+    .stApp {
+        background-image: url("https://i.imgur.com/vy5O4q3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .stApp::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+    h1, h2, h3, p, .stMarkdown, label, .st-emotion-cache {
+        color: white !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 st.markdown('<h1 style="color: white; text-align: center;">KLASİK TÜRK ŞİİRİ MAZMUN SÖZLÜĞÜ</h1>', unsafe_allow_html=True)
 
 
