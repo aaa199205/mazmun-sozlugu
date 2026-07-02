@@ -109,20 +109,25 @@ mazmunlar = {
 }
 
 arama = st.text_input("🔍 Mazmun ara:", "", key="main_search")
-
 if arama:
     arama_lower = arama.lower()
-    bulunan = {k: v for k, v in mazmunlar.items() if arama_lower in k.lower() or arama_lower in v.lower()}
+    bulunan = {}
+    for m, tam_metin in mazmunlar.items():
+        if arama_lower in m.lower() or arama_lower in tam_metin.lower():
+            bulunan[m] = tam_metin
+    
     if bulunan:
         st.success(f"✅ {len(bulunan)} mazmun bulundu")
-        for m, aciklama in bulunan.items():
+        for m, tam_metin in bulunan.items():
             st.subheader(m)
-            st.write(aciklama)
+            st.write(tam_metin)
             st.divider()
     else:
         st.error("❌ Bu mazmun sözlükte yok.")
 else:
     st.info("🔎 Bir mazmun adı veya kelime yazın.")
+
+
 
 st.caption("Geliştiren: **Ayşe GÜLMEZ**")
 
