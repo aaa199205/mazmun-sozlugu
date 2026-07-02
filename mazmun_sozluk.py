@@ -34,14 +34,7 @@ st.markdown('<h1 class="main-title">Klasik Türk Şiiri Mazmun Sözlüğü</h1>'
 
 st.markdown("<h3 style='text-align: center; color: white;'>Divan Edebiyatı Mazmunları Araştırma Aracı</h3>", unsafe_allow_html=True)
 
-st.info("""
-**Mazmun** (Ar. mażmūn)  
 
-Klasik Divan şiirinde kullanılan **klişeleşmiş, kalıplaşmış anlam, kavram veya imgedir**.  
-
-Şairler, sevgilinin fiziksel özelliklerini veya soyut kavramları geleneksel mazmunlarla anlatır.  
-Örnek: Göz → Nergis, Kaş → Keman, Saç → Yılan.
-""")
 
 # Mazmunlar (buraya önceki mazmun dict'ini koy)
 mazmunlar = { ... }  # önceki mazmunları buraya yapıştır
