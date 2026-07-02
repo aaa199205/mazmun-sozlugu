@@ -20,7 +20,8 @@ mazmunlar = {
     "Kâmet": "Kök: Ar. Zahiri Anlamı: Boy, endam. Şiirdeki Karşılığı: Sevgilinin servi ağacı gibi uzun, düz ve kusursuz boyu. Örnek Beyit: \"Kāmetin serv-i revânın kıldılar kaddim dütâ Ayrılığın nârına yaktın beni ey bî-vefâ\" — Ahmed Paşa",
     "Kadd": "Kök: Ar. Zahiri Anlamı: Boy. Şiirdeki Karşılığı: Sevgilinin ölçülü ve uzun boyu. Örnek Beyit: \"Kaddi mevzûn hûblar içre seçilmez bir dahi Şems-i meclistir yüzün nûrun gören eyler duâ\" — Zâtî",
     "Bâlâ": "Kök: Far. Zahiri Anlamı: Yüksek, yukarı. Şiirdeki Karşılığı: \"Kadd-i bâlâ\" tamlamasıyla sevgilinin ulaşılamayan, yüce ve uzun boyu. Örnek Beyit: \"O kadd-i bâlâya ermez elimiz neyleriz Gönül o serv-i âzâda muallaktır neyleriz\" — Nâilî",
-    "Hadd": "Kök: Ar. Zahiri Anlamı: Yanak. Şiirdeki Karşılığı: Gül gibi taze, ateş gibi parlak ve kırmızı olan sevgili yanağı. Örnek Beyit: \"Lâle-hadler yine gülşende neler etmediler Servi yürütmediler goncayı söyletmediler\" — Necâtî Bey"
+      "Hadd": "Kök: Ar. Zahiri Anlamı: Yanak. Şiirdeki Karşılığı: Gül gibi taze, ateş gibi parlak ve kırmızı olan sevgili yanağı. Örnek Beyit: \"Lâle-hadler yine gülşende neler etmediler Servi yürütmediler goncayı söyletmediler\" — Necâtî Bey"
+}
 }
 st.markdown("""
 <style>
