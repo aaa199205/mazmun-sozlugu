@@ -1,6 +1,6 @@
 import streamlit as st
 mazmunlar = {
-    Mestâne: "Kök: Far. Zahiri Anlamı: Sarhoşça. Şiirdeki Karşılığı: Sevgilinin insanı büyüleyen, süzgün ve baygın bakışlı gözü. Örnek Beyit: \"Mestâne nigehinle n’ola kılsañ bizi teshîr Efsûn-ı nigâhın senin ey mâh-likā yok\" — Nedîm",
+    
     "Hûb": "Kök: Far. Zahiri Anlamı: Güzel, iyi, hoş. Şiirdeki Karşılığı: Sevgiliyi niteleyen en temel sıfattır; hem dış güzelliği hem de güzel huyu temsil eder. Örnek Beyit: \"Hûblar mihr ü vefâ göstermeseler n’ola kim Padişahlar her ne kim dilerse anı eylerler\" — Ahmed Paşa",
     "Dildâr": "Kök: Far. Zahiri Anlamı: Gönül tutan. Şiirdeki Karşılığı: Âşığın gönlünü kendine bağlamış olan kişi, sevgili. Örnek Beyit: \"Etti o dildâr kûyunu bana mesken N'eyleyeyim gayrı ben bağı çemeni\" — Nedîm",
     "Dilber": "Kök: Far. Zahiri Anlamı: Gönül götüren. Şiirdeki Karşılığı: Güzelliğiyle âşığın aklını başından alıp kalbini çalan sevgili. Örnek Beyit: \"Dilberâ lutf eyle gel bir kez güler yüzle bize Gül yüzün görmek müyesser eyle bir kez her gize\" — Şeyhî",
