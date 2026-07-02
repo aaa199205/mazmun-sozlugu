@@ -1,4 +1,14 @@
 import streamlit as st
+st.info("""
+**Mazmun** (Ar. mażmūn)  
+
+Klasik Divan şiirinde kullanılan **klişeleşmiş, kalıplaşmış anlam, kavram veya imgedir**.  
+
+Şairler, sevgilinin fiziksel özelliklerini veya soyut kavramları geleneksel mazmunlarla anlatır.  
+Örnek: Göz → Nergis, Kaş → Keman, Saç → Yılan, Dudak → Gonca/Lal.
+
+Mazmunlar, şiire **derinlik, kültürel zenginlik** ve **çok katmanlı anlam** katar.
+""")
 
 st.set_page_config(page_title="Mazmun Sözlüğü", page_icon="🕌", layout="centered")
 
