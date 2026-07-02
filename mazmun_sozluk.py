@@ -1,4 +1,21 @@
 import streamlit as st
+if arama:
+    arama_lower = arama.lower()
+    bulunan = {}
+    for m, tam_metin in mazmunlar.items():
+        if arama_lower in m.lower() or arama_lower in tam_metin.lower():
+            bulunan[m] = tam_metin
+    
+    if bulunan:
+        st.success(f"✅ {len(bulunan)} mazmun bulundu")
+        for m, tam_metin in bulunan.items():
+            st.subheader(m)
+            st.write(tam_metin)  # Tam metin çıkıyor
+            st.divider()
+    else:
+        st.error("❌ Bu mazmun sözlükte yok.")
+else:
+    st.info("🔎 Bir mazmun adı veya kelime yazın.")
 mazmunlar = {
     
     "Hûb": "Kök: Far. Zahiri Anlamı: Güzel, iyi, hoş. Şiirdeki Karşılığı: Sevgiliyi niteleyen en temel sıfattır; hem dış güzelliği hem de güzel huyu temsil eder. Örnek Beyit: \"Hûblar mihr ü vefâ göstermeseler n’ola kim Padişahlar her ne kim dilerse anı eylerler\" — Ahmed Paşa",
