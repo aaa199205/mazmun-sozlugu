@@ -22,6 +22,21 @@ st.markdown("""
         background-position: center;
         background-attachment: fixed;
     }
+    /* Yazıları daha okunur yapmak için hafif gölge */
+    .stApp h1, .stApp h2, .stApp h3, .stApp p, .stApp div {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        color: white !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
+    .stApp {
+        background-image: url("https://i.imgur.com/JAri0SO.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
     .stApp::before {
         content: "";
         position: absolute;
