@@ -5,7 +5,7 @@ st.set_page_config(page_title="Mazmun Sözlüğü", layout="centered")
 st.markdown("""
 <style>
     .stApp {
-        background-image: url("https://i.imgur.com/vy5O4q3.jpg");
+        background-image: url("https://i.imgur.com/2LCaKGI.jpeg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
