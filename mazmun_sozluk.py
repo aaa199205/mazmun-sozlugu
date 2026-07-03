@@ -1,6 +1,6 @@
 import streamlit as st
 with tab2:
-    st.subheader("Mazmun Nedir?")
+    st.subheader("bkz. Mazmuna Dair Malumat ")
     st.markdown("""
     Divan edebiyatının temel taşlarından biri olan mazmun, şiirin anlam dünyasını şekillendiren ve şairin ustalığını sergilediği en önemli edebiyat terimlerinden biridir. Divan şiirinin kendine özgü bir mazmunlar dünyasına sahip olduğu ve anlatılmak istenenlerin bu kavramlar aracılığıyla dile getirildiği kabul edilir. Kelime anlamı olarak Arapça “zımn” kökünden gelen mazmun; "mefhum, mana" veya "nükteli, sanatlı söz" gibi karşılıklar bulsa da, edebiyat terminolojisinde çok daha derin ve katmanlı bir yapıyı ifade eder.
 Mazmunun Tanımı ve Mahiyeti
@@ -18,7 +18,7 @@ KAYNAKÇA
 
 * Mengi, M. (2000). Divan Şiiri Yazıları. Ankara: Akçağ Yayınları. (S. 45-61).
 
-* Pala, İ. (t.y.). Mazmun'un Mazmunu. metın bu bkz. Mazmuna Dair Malumat olacak o kısım
+* Pala, İ. (t.y.). Mazmun'un Mazmunu. 
 
 mazmunlar = {
     
@@ -46,7 +46,7 @@ mazmunlar = {
 st.markdown("""
 <style>
     .stApp {
-        background-image: url(https://i.imgur.com/2LCaKGI.jpeg);
+        background-image:(https://i.imgur.com/2LCaKGI.jpeg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
