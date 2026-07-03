@@ -105,11 +105,8 @@ if arama:
     arama_lower = arama.lower().strip()
     bulunan = {}
     for m, tam_metin in mazmunlar.items():
-        # Başlangıç harfiyle arama (en önemlisi)
+        # SADECE BAŞLANGIÇ HARFİ
         if m.lower().startswith(arama_lower):
-            bulunan[m] = tam_metin
-        # Ek olarak içinde geçenleri de göster (isteğe bağlı)
-        elif arama_lower in m.lower() or arama_lower in tam_metin.lower():
             bulunan[m] = tam_metin
     
     if bulunan:
@@ -118,6 +115,10 @@ if arama:
             st.subheader(m)
             st.write(tam_metin)
             st.divider()
+    else:
+        st.error("❌ Bu mazmun sözlükte yok.")
+else:
+    st.info("🔎 Bir mazmun adı yazmaya başlayın (örnek: nergis)")
     else:
         st.error("❌ Bu mazmun sözlükte yok.")
 else:
