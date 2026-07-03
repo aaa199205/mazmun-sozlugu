@@ -1,24 +1,5 @@
 import streamlit as st
-with tab2:
-    st.subheader("bkz. Mazmuna Dair Malumat ")
-    Divan edebiyatının temel taşlarından biri olan mazmun, şiirin anlam dünyasını şekillendiren ve şairin ustalığını sergilediği en önemli edebiyat terimlerinden biridir. Divan şiirinin kendine özgü bir mazmunlar dünyasına sahip olduğu ve anlatılmak istenenlerin bu kavramlar aracılığıyla dile getirildiği kabul edilir. Kelime anlamı olarak Arapça “zımn” kökünden gelen mazmun; "mefhum, mana" veya "nükteli, sanatlı söz" gibi karşılıklar bulsa da, edebiyat terminolojisinde çok daha derin ve katmanlı bir yapıyı ifade eder.
-Mazmunun Tanımı ve Mahiyeti
-Mazmun; "kalıp benzetme" veya "klişe mecaz" olarak tanımlanır. Sevgilinin boyu için "servi", dudağı için "lâl" veya "gonca" kullanılması bu türden kalıplaşmış ifadelerdir.Bir diğer yönüyle mazmun; "bir sözün veya beytin altında gizli olan sanatlı anlam"dır. Bu yönüyle mazmun, bir kavramı özelliklerini çağrıştırarak kelime grupları içine gizleme sanatıdır ve hem bir oyun hem de bir hüner olarak kabul edilir.
-Şiir Estetiği ve Sanatsal İşlevi
-Mazmun, divan şiirinin "mutlak güzel"e ulaşma çabasının ve soyut güzellik anlayışının bir gereği olarak ortaya çıkmıştır. Şair, dış dünyadaki gerçeklikten kopup hayal dünyasındaki ideal güzeli yaratırken hazır unsurları ve çağrışımları kullanır. Bu süreçte mazmunun; teşbih (benzetme), istiare (eğretileme) ve mecaz gibi sanatlarla yakın bir ilişkisi vardır. Özellikle kalıplaşmış açık istiarelerin birçoğu zamanla mazmun niteliği kazanmıştır. Ancak gerçek bir mazmun, sadece bu sanatlardan destek almakla kalmaz, beyit içinde ustaca gizlenmiş ince bir sezdirme ve özgün bir buluş (bikr-i mazmun) gerektirir.
-Mazmun, şair ile okuyucu arasında zihinsel bir köprü kurar. Beyitte gizlenen mazmunu keşfedebilen okuyucu, şiirle sağlıklı bir bağ kurarak estetik bir zevk duyar. Bu yönüyle mazmun, halk şiirindeki muammaya benzetilebilir; asıl amaç, kelimelerin yüzeydeki anlamlarından ziyade, arka plandaki "gizli güzelliği" görebilmektir. Şair, bir komutanın araziye ipuçları bırakması gibi, beyit içerisine çeşitli deliller serpiştirir ve okuyucunun bu işaretleri takip ederek hedefe, yani asıl anlama ulaşmasını bekler.
-Eski şairler, özellikle Nef’î, Fuzûlî ve Nedîm gibi ustalar, "mazmun-ı has" denilen benzersiz ve özgün anlamlar yaratmakla övünmüşlerdir. Örneğin;
-
-* Fuzûlî'nin bir beytinde "sabit kadem", "muktedâ" ve "rehber" gibi kelimeler kullanılarak, namaz kelimesi hiç geçmediği halde bir namaz mazmunu oluşturulmuştur.
-
-* Nedîm, sevgilinin dudağını anlatırken fiziksel betimlemeler yerine, bülbülü coşturmak için güllerin ceplerinde sakladığı bir değerden bahsederek zarif bir mazmun üretir. 
-
-KAYNAKÇA
-
-* Mengi, M. (2000). Divan Şiiri Yazıları. Ankara: Akçağ Yayınları. (S. 45-61).
-
-* Pala, İ. (t.y.). Mazmun'un Mazmunu. 
-
+    
 mazmunlar = {
     
     "Hûb": "Kök: Far. Zahiri Anlamı: Güzel, iyi, hoş. Şiirdeki Karşılığı: Sevgiliyi niteleyen en temel sıfattır; hem dış güzelliği hem de güzel huyu temsil eder. Örnek Beyit: \"Hûblar mihr ü vefâ göstermeseler n’ola kim Padişahlar her ne kim dilerse anı eylerler\" — Ahmed Paşa",
