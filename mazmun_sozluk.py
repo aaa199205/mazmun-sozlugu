@@ -26,7 +26,7 @@ mazmunlar = {
 st.markdown("""
 <style>
     .stApp {
-        background-image: url("https://i.imgur.com/7s05kVc.jpg");
+        background-image: url(https://i.imgur.com/iSWuBAQ.jpeg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
