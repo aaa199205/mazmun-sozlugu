@@ -102,10 +102,14 @@ mazmunlar = {
 
 arama = st.text_input("🔍 Mazmun ara:", "", key="main_search")
 if arama:
-    arama_lower = arama.lower()
+    arama_lower = arama.lower().strip()
     bulunan = {}
     for m, tam_metin in mazmunlar.items():
-        if arama_lower in m.lower() or arama_lower in tam_metin.lower():
+        # Başlangıç harfiyle arama (en önemlisi)
+        if m.lower().startswith(arama_lower):
+            bulunan[m] = tam_metin
+        # Ek olarak içinde geçenleri de göster (isteğe bağlı)
+        elif arama_lower in m.lower() or arama_lower in tam_metin.lower():
             bulunan[m] = tam_metin
     
     if bulunan:
@@ -117,9 +121,8 @@ if arama:
     else:
         st.error("❌ Bu mazmun sözlükte yok.")
 else:
-    st.info("🔎 Bir mazmun adı veya kelime yazın.")
+    st.info("🔎 Bir mazmun adı yazmaya başlayın (örnek: nergis, servi, sünbül)")
 
 
-
-st.caption("Geliştiren: **Ayşe GÜLMEZ**")
+st.caption("Geliştiren: **Ayşe Sena GÜLMEZ**")
 
