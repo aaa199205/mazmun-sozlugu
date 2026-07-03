@@ -40,6 +40,9 @@ st.markdown("""
         height: 100%;
         background-color: rgba(0, 0, 0, 0.45);
     }
+    h1, h2, h3, p, .stMarkdown, label, div, span {
+        color: white !important;
+    }
     .main-title {
         color: white;
         text-align: center;
