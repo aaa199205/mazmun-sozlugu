@@ -72,7 +72,7 @@ if arama:
     bulunan = {m: v for m, v in mazmunlar.items() if m.lower().startswith(arama_lower)}
     
     if bulunan:
-        st.success(f"✅ {len(bulunan)} mazmun bulundu")
+        st.success(f"✅ {len(bulunan)} böyle bir mazmun varmış")
         for m, tam_metin in bulunan.items():
             st.subheader(m)
             st.write(tam_metin)
