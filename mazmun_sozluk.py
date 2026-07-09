@@ -68,11 +68,25 @@ mazmunlar = {
 arama = st.text_input("🔍 Mazmun ara:", "", key="main_search")
 
 if arama:
-    arama_lower = arama.lower().strip()
-    bulunan = {m: v for m, v in mazmunlar.items() if m.lower().startswith(arama_lower)}
+    # Uzun ünlüleri normal harfe çevir (arama için)
+    def normalize(text):
+        text = text.lower().strip()
+        text = text.replace('â', 'a').replace('ā', 'a')
+        text = text.replace('î', 'i').replace('ī', 'i')
+        text = text.replace('û', 'u').replace('ū', 'u')
+        text = text.replace('ê', 'e').replace('ô', 'o')
+        return text
+    
+    arama_norm = normalize(arama)
+    
+    bulunan = {}
+    for m, tam_metin in mazmunlar.items():
+        m_norm = normalize(m)
+        if m_norm.startswith(arama_norm) or arama_norm in m_norm or arama_norm in normalize(tam_metin):
+            bulunan[m] = tam_metin
     
     if bulunan:
-        st.success(f"✅ {len(bulunan)} tane varmış ")
+        st.success(f"✅ {len(bulunan)} mazmun bulundu")
         for m, tam_metin in bulunan.items():
             st.subheader(m)
             st.write(tam_metin)
